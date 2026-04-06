@@ -1,0 +1,17 @@
+# Exclude reference repository and hackathon PDFs
+OpenEnv/
+Meta Hackathon Problem statement.pdf
+Meta OpenEnv Hackathon_ Guidelines.pdf
+
+# Local environment artifacts
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# Editor and OS
+.vscode/
+.idea/
+Thumbs.db
