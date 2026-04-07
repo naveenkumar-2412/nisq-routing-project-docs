@@ -1,0 +1,149 @@
+{
+  "seeds": [
+    7,
+    13,
+    29
+  ],
+  "records": [
+    {
+      "task_id": "easy_line_routing",
+      "seed": 7,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 7.0,
+      "total_reward": 1.04862,
+      "rubric_score": 0.8775000000000001,
+      "swap_count": 0.0,
+      "depth": 7.0,
+      "success_prob": 0.9437972053941198
+    },
+    {
+      "task_id": "easy_line_routing",
+      "seed": 13,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 7.0,
+      "total_reward": 1.04862,
+      "rubric_score": 0.8775000000000001,
+      "swap_count": 0.0,
+      "depth": 7.0,
+      "success_prob": 0.9437972053941198
+    },
+    {
+      "task_id": "easy_line_routing",
+      "seed": 29,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 7.0,
+      "total_reward": 1.04862,
+      "rubric_score": 0.8775000000000001,
+      "swap_count": 0.0,
+      "depth": 7.0,
+      "success_prob": 0.9437972053941198
+    },
+    {
+      "task_id": "medium_heavyhex_routing",
+      "seed": 7,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 42.0,
+      "total_reward": -0.13142532467532472,
+      "rubric_score": 0.08945779220779226,
+      "swap_count": 30.0,
+      "depth": 102.0,
+      "success_prob": 0.8156339163400178
+    },
+    {
+      "task_id": "medium_heavyhex_routing",
+      "seed": 13,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 42.0,
+      "total_reward": -0.13142532467532472,
+      "rubric_score": 0.08945779220779226,
+      "swap_count": 30.0,
+      "depth": 102.0,
+      "success_prob": 0.8156339163400178
+    },
+    {
+      "task_id": "medium_heavyhex_routing",
+      "seed": 29,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 42.0,
+      "total_reward": -0.13142532467532472,
+      "rubric_score": 0.08945779220779226,
+      "swap_count": 30.0,
+      "depth": 102.0,
+      "success_prob": 0.8156339163400178
+    },
+    {
+      "task_id": "hard_drift_aware_routing",
+      "seed": 7,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 61.0,
+      "total_reward": -0.049819193277310936,
+      "rubric_score": 0.27526801120448186,
+      "swap_count": 43.0,
+      "depth": 147.0,
+      "success_prob": 0.695045669763128
+    },
+    {
+      "task_id": "hard_drift_aware_routing",
+      "seed": 13,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 61.0,
+      "total_reward": -0.049819193277310936,
+      "rubric_score": 0.27526801120448186,
+      "swap_count": 43.0,
+      "depth": 147.0,
+      "success_prob": 0.695045669763128
+    },
+    {
+      "task_id": "hard_drift_aware_routing",
+      "seed": 29,
+      "done": 1.0,
+      "completed": 1.0,
+      "steps": 61.0,
+      "total_reward": -0.049819193277310936,
+      "rubric_score": 0.27526801120448186,
+      "swap_count": 43.0,
+      "depth": 147.0,
+      "success_prob": 0.695045669763128
+    }
+  ],
+  "summary": {
+    "easy_line_routing": {
+      "episodes": 3.0,
+      "completion_rate": 1.0,
+      "avg_steps": 7.0,
+      "avg_total_reward": 1.04862,
+      "avg_rubric_score": 0.8775000000000001,
+      "avg_swap_count": 0.0,
+      "avg_depth": 7.0,
+      "avg_success_prob": 0.9437972053941198
+    },
+    "medium_heavyhex_routing": {
+      "episodes": 3.0,
+      "completion_rate": 1.0,
+      "avg_steps": 42.0,
+      "avg_total_reward": -0.13142532467532472,
+      "avg_rubric_score": 0.08945779220779226,
+      "avg_swap_count": 30.0,
+      "avg_depth": 102.0,
+      "avg_success_prob": 0.8156339163400178
+    },
+    "hard_drift_aware_routing": {
+      "episodes": 3.0,
+      "completion_rate": 1.0,
+      "avg_steps": 61.0,
+      "avg_total_reward": -0.049819193277310936,
+      "avg_rubric_score": 0.27526801120448186,
+      "avg_swap_count": 43.0,
+      "avg_depth": 147.0,
+      "avg_success_prob": 0.695045669763128
+    }
+  }
+}

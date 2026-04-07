@@ -28,3 +28,8 @@ server = "server.app:main"
 [tool.setuptools]
 include-package-data = true
 py-modules = ["client", "models", "inference"]
+packages = ["server", "tests"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -78,20 +78,39 @@ See [REWARD_AND_RUBRIC.md](REWARD_AND_RUBRIC.md).
 - Implementation plan: [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
 - Submission runbook: [SUBMISSION_RUNBOOK.md](SUBMISSION_RUNBOOK.md)
 
-## Baseline score placeholders
+## Baseline benchmark results
 
-Baseline numbers are intentionally left as TBD until server implementation is complete.
+Baseline was measured using the deterministic greedy routing policy in scripts/baseline_eval.py with seeds 7, 13, and 29.
 
-| Task | Metric | Baseline (TBD) |
-|---|---|---|
-| Easy | Normalized routing score | TBD |
-| Medium | Normalized routing score | TBD |
-| Hard | Normalized routing score | TBD |
+| Task | Completion Rate | Avg Rubric Score | Avg Total Reward | Avg Steps |
+|---|---|---:|---:|---:|
+| easy_line_routing | 1.00 | 0.878 | 1.049 | 7.0 |
+| medium_heavyhex_routing | 1.00 | 0.089 | -0.131 | 42.0 |
+| hard_drift_aware_routing | 1.00 | 0.275 | -0.050 | 61.0 |
 
-## References used while preparing this project
+Detailed run artifacts are stored in baseline_results.json.
 
-- OpenEnv environment creation guide in [../README.md](../README.md)
-- Existing environment examples in [../carla_env](../carla_env), [../sumo_rl_env](../sumo_rl_env), and [../wildfire_env](../wildfire_env)
-- Hackathon requirement extraction from:
-  - ../../Meta OpenEnv Hackathon_ Guidelines.pdf
-  - ../../Meta Hackathon Problem statement.pdf
+## Verification status
+
+- Unit and integration tests: 9 passed (pytest)
+- OpenEnv validation: [OK] Ready for multi-mode deployment
+
+## Reproducibility commands
+
+Use the project virtual environment from the workspace root.
+
+1. c:\kaggle\meta\.venv\Scripts\python.exe -m pip install -e .[dev]
+2. c:\kaggle\meta\.venv\Scripts\python.exe -m pytest -q
+3. c:\kaggle\meta\.venv\Scripts\python.exe scripts\baseline_eval.py
+4. c:\kaggle\meta\.venv\Scripts\openenv.exe validate .
+
+## Related project docs
+
+- [PRD.md](PRD.md)
+- [PROBLEM_STATEMENT.md](PROBLEM_STATEMENT.md)
+- [DESIGN_SPEC.md](DESIGN_SPEC.md)
+- [TASK_SUITE_AND_GRADERS.md](TASK_SUITE_AND_GRADERS.md)
+- [REWARD_AND_RUBRIC.md](REWARD_AND_RUBRIC.md)
+- [COMPLIANCE_MATRIX.md](COMPLIANCE_MATRIX.md)
+- [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
+- [SUBMISSION_RUNBOOK.md](SUBMISSION_RUNBOOK.md)

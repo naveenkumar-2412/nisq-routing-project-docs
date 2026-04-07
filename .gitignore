@@ -6,6 +6,8 @@ Meta OpenEnv Hackathon_ Guidelines.pdf
 # Local environment artifacts
 .venv/
 __pycache__/
+.pytest_cache/
+*.egg-info/
 *.pyc
 *.pyo
 *.pyd

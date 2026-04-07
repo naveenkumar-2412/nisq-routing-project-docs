@@ -69,10 +69,18 @@ Actions:
 
 ## 7. Final pre-submit checklist
 
-- [ ] README complete with baseline score table
-- [ ] Three tasks configured and reproducible
-- [ ] Deterministic graders output [0,1]
-- [ ] Reward shaping enabled and tested
-- [ ] inference.py logs START/STEP/END exactly
+- [x] README complete with baseline score table
+- [x] Three tasks configured and reproducible
+- [x] Deterministic graders output [0,1]
+- [x] Reward shaping enabled and tested
+- [x] inference.py logs START/STEP/END exactly
 - [ ] Docker build and run verified
 - [ ] Space is Running
+
+## 8. Current status snapshot
+
+- Tests: 9 passed with pytest.
+- Validation: openenv validate returned OK.
+- Baseline: generated in baseline_results.json.
+- Docker verification attempt: Docker CLI present, but daemon was not running in this session.
+- Remaining external actions: start Docker daemon, verify container runtime, and confirm Hugging Face Space is Running.
